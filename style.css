@@ -1,0 +1,208 @@
+body{
+    font-family: Roboto, "DejaVu Serif", serif;
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+.header,
+.footer{
+    display:flex;
+    height:72px;
+    background-color: #1F2937;
+}
+
+.header{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer{
+    color:white;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-size:24px;
+    color:#F9FaF8;
+}
+
+.container{
+    display:flex;
+    flex:1;
+}
+
+.container.hero{
+    background-color: #1F2937;
+    display:flex;
+    justify-content:center;
+    padding: 64px 24px;
+    gap:32px;
+}
+
+.hero-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width:500px;
+    flex:1;
+    gap:16px;
+}
+
+.hero-title{
+    color:#F9FaF8;
+    font-weight:800;
+    font-size:48px;
+    margin:0;
+}
+
+.hero-text{
+    color:#E5E7EB;
+    font-size:18px;
+}
+
+.hero-image{
+    max-width: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex:1 1 auto;
+}
+
+.hero-button{
+    border-color:#3882F6;
+    flex:0 1 auto;
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+
+.container.info{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding:24px;
+}
+
+.container.info h2{
+    font-size: 36px;
+    font-weight:800;
+    color:#1F2937;
+}
+
+.images{
+    display:flex;
+    gap:32px;
+}
+
+.images-container{
+    display:flex;
+    flex-direction: column;
+    max-width:200px;
+    color:#373738;
+    font-size:18px;
+}
+
+.image-square{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
+    max-width: 200px;
+    max-height: 200px;
+    border-style: solid;
+    border-color:#3882F6;
+    border-width: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 0 1 auto;
+}
+
+.image-square img{
+    /*fixes white lines on SOME zoom levels (not seen on 100% zoom)*/
+    aspect-ratio: 1/1;
+    width:105%;
+    height: 105%;
+}
+
+.container.quote{
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.container.quote figure{
+    max-width:800px;
+    text-align: justify;
+}
+
+.container.quote cite{
+    font-size: 36px;
+    color:#1F2937;
+}
+
+.container.quote figcaption{
+    color:#1F2937;
+    text-align: right;
+    font-size: 18px;
+}
+
+.container.call{
+    justify-content: center;
+    align-items: center;
+    padding: 72px 24px;
+}
+
+.calling{
+    box-sizing: border-box;
+    max-width: 1000px;
+    background-color: #3882F6;
+    border-radius: 4px;
+    padding: 32px 64px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+.calling-text{
+    color:#E5E7EB;
+}
+
+.calling-text h2{
+    margin:0;
+    font-size: 24px;
+}
+
+.calling-text p{
+    margin:0;
+    font-size: 18px;
+}
+
+button{
+    background-color: #3882F6;
+    color:white;
+    padding: 8px 32px;
+    font-size:16px;
+    font-weight:600;
+    border-radius: 5px;
+    border-color:white;
+    border-style: solid;
+    border-width:2px;
+}
+
+ul{
+    display:flex;
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    gap:16px;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
